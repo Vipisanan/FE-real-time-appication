@@ -53,8 +53,10 @@ class AppStomp extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>{this.state.messages}</div>
+      <div style={{margin:'90px'}}>
+        <div>Message: {this.state.messages}</div>
+        <div>Subscribed: {this.state.username}</div>
+
         <input type="text" onChange={this.handleChange}/>
         <button onClick={()=>this.subscribeSTOMP()}>subscribe</button>
       </div>
