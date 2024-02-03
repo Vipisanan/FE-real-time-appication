@@ -31,6 +31,7 @@ class AppStomp extends React.Component {
         });
     }
 
+    // TODO: need to add
     let onDisconnected = () => {
       console.log("Disconnected!!")
     }
